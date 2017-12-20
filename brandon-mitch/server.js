@@ -10,8 +10,15 @@ const PORT = process.env.PORT || 3000;
 
 //This is our data path that tells express that our data is in our public directory so it can populate existing articles.It also gives it a path to our HTML pages.
 app.use(express.static('./public'))
- 
-
+ app.get('/index.html', (request, response) => {
+   response.sendFile('/index.html',{root: './public'})
+ })
+ app.get('/new.html', (request, response) => {
+  response.sendFile('/new.html',{root: './public'})
+})
+app.use((request, response) => {
+  response.status(404).send('Ain\'t nothing here!!!')
+})
 app.post('/articles', bodyParser, function(request, response) {
   // REVIEWED: This route will receive a new article from the form page, new.html, and log that form data to the console. We will wire this up soon to actually write a record to our persistence layer!
   console.log(request.body);

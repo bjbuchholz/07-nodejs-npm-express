@@ -4,19 +4,21 @@
 **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
+This application serves a blog site that allows users to see currently published articles. It also serves a NEW.html page that will eventually allow new articles to be published.
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+In Terminal: run > nodemon server.js
+In web browser: > load localhost:3000 /index.html || /new.html
+
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+This application uses HTML, CSS, Javascript(with the jQuery library) and Node.js (with Express and nodemon)
 
 ## Change Log
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
+12/19/2017 -  completed our reviews for server.js/articles.js, initial project file directory built out, installed express/nodemon, added in node_modules to git ignore. In server.js told it how and what to load using express. 
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
 
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
--->
+Instructor JB Telez, TA team

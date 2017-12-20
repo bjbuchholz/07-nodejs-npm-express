@@ -73,8 +73,10 @@ articleView.setTeasers = () => {
   });
 };
 
-// COMMENT: When/where is this function invoked? What event ultimately triggers its execution? Explain the sequence of code execution when this function is invoked.
-// PUT YOUR RESPONSE HERE
+// COMMENTED: When/where is this function invoked? What event ultimately triggers its execution? Explain the sequence of code execution when this function is invoked.
+// This function in invoked at the bottom of new.html. When a new article is created by an "author." The sequence of events is as follows:
+// Hide existing article
+// 
 articleView.initNewArticlePage = () => {
   $('.tab-content').show();
   $('#export-field').hide();
