@@ -1,0 +1,25 @@
+{
+  "name": "brandon-mitch",
+  "version": "1.0.0",
+  "description": "lab 07",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjbuchholz/07-nodejs-npm-express.git"
+  },
+  "author": "Brandon Buchholz, Mitch Hall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bjbuchholz/07-nodejs-npm-express/issues"
+  },
+  "homepage": "https://github.com/bjbuchholz/07-nodejs-npm-express#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.13.3"
+  }
+}
