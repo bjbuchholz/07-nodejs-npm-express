@@ -75,7 +75,7 @@ articleView.setTeasers = () => {
 
 // COMMENTED: When/where is this function invoked? What event ultimately triggers its execution? Explain the sequence of code execution when this function is invoked.
 // This function in invoked at the bottom of new.html. When a new article is created by an "author." The sequence of events is as follows:
-// Hide existing article
+// Loads all scripts, show the form, hide the export field, and populate article-json with the new article information.
 // 
 articleView.initNewArticlePage = () => {
   $('.tab-content').show();
@@ -88,8 +88,8 @@ articleView.initNewArticlePage = () => {
   $('#new-form').on('submit', articleView.submit);
 };
 
-// COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// COMMENTED: When is this function called? What event ultimately triggers its execution?
+// This article is called on line 88, the even that ultimately triggers it's execution is clicking on the Submit button after the New Article form is filled out. 
 articleView.create = () => {
   let article;
   $('#articles').empty();
@@ -113,8 +113,8 @@ articleView.create = () => {
   $('#article-json').val(`${JSON.stringify(article)},`);
 };
 
-// COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// COMMENTED: When is this function called? What event ultimately triggers its execution?
+// This function is called below when the submit button is clicked after a new Article is written.
 articleView.submit = event => {
   event.preventDefault();
   let article = new Article({
@@ -126,8 +126,8 @@ articleView.submit = event => {
     publishedOn: $('#article-published:checked').length ? new Date() : null
   });
 
-  // COMMENT: Where is this function defined? When is this function called? What event ultimately triggers its execution?
-  // PUT YOUR RESPONSE HERE
+  // COMMENTED: Where is this function defined? When is this function called? What event ultimately triggers its execution?
+  // The function is defined as a prototype of the Article constructor in the Article.js file. It is called when the Submit button on the new Article form is clicked. 
   article.insertRecord();
 }
 
